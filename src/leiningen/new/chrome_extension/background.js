@@ -1,0 +1,1 @@
+{{sanitized}}.background.init();

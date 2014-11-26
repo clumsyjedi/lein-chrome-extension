@@ -1,0 +1,31 @@
+{
+  "name": "{{ns-name}}",
+  "version": "0.1",
+  "browser_action": {
+      "default_title": "Show the popup",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "19": "icon19.png",
+        "38": "icon38.png"
+      }
+
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+ "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["{{sanitized}}.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": ["{{sanitized}}.js", "background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
+
