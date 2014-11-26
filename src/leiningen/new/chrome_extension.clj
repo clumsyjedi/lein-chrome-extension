@@ -14,24 +14,19 @@
   [name]
   (let [sanitized (sanitize-ns name)
         data {:name name :ns-name sanitized :sanitized (name-to-path name)}]
-;    (doseq [x [16 19 38 48 128]
-;            :let [icon (str "icon" x ".png")]]
-;      (println "resource" (io/resource (str source-dir icon)))
-;      (io/copy (io/reader (io/resource (str source-dir icon)))
-;               (io/file (str "resources/images/" icon))))
-
     (->files data 
              [(str "src/" sanitized "/background.cljs") (render "background.cljs" data)]
              [(str "src/" sanitized "/content.cljs") (render "content.cljs" data)]
+             [(str "src/" sanitized "/popup.cljs") (render "popup.cljs" data)]
              ["project.clj" (render "project.clj" data)]
              ["resources/images/icon16.png" (binary "icon16.png")]
              ["resources/images/icon19.png" (binary "icon19.png")]
              ["resources/images/icon38.png" (binary "icon38.png")]
              ["resources/images/icon48.png" (binary "icon48.png")]
              ["resources/images/icon128.png" (binary "icon128.png")]
-
-             ["resources/js/content.js" (render "content.js" data)]
-             ["resources/js/manifest.json" (render "manifest.json" data)]
              ["resources/js/background.js" (render "background.js" data)]
+             ["resources/js/content.js" (render "content.js" data)]
+             ["resources/js/popup.js" (render "popup.js" data)]
+             ["resources/js/manifest.json" (render "manifest.json" data)]
              ["resources/html/popup.html" (render "popup.html" data)]
              )))
