@@ -1,4 +1,4 @@
-(defproject chrome-extension/lein-template "0.1.0"
+(defproject chrome-extension/lein-template "0.1.1"
   :description "Created with lein-create-template"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
