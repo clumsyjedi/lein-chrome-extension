@@ -1,6 +1,6 @@
 (defproject chrome-extension/lein-template "0.1.1"
-  :description "Created with lein-create-template"
+  :description "A leiningen template for generating lein-chromebuild projects"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+            :url "https://github.com/clumsyjedi/lein-chrome-extension"}
   :eval-in-leiningen true)
