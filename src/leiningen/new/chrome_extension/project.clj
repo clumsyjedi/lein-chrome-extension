@@ -4,7 +4,7 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2156"]
                  [org.clojure/core.async "0.1.242.0-44b1e3-alpha"]
-                 [khroma "0.0.3-SNAPSHOT"]
+                 [khroma "0.0.2"]
                  [prismatic/dommy "0.1.2"]]
   :source-paths ["src"]
   :profiles {:dev {:plugins [[com.cemerick/austin "0.1.3"]
