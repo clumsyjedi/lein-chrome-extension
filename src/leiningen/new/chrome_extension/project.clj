@@ -9,7 +9,7 @@
   :source-paths ["src"]
   :profiles {:dev {:plugins [[com.cemerick/austin "0.1.3"]
                              [lein-cljsbuild "1.0.1"]
-                             [lein-chromebuild "0.2.0"]]
+                             [lein-chromebuild "0.2.1"]]
 
                    :cljsbuild {:builds {:main
                                         {:source-paths ["src"]
