@@ -13,6 +13,7 @@ Projects created by this template are functional chrome extensions that can be b
   - A manifest.json
   - A content script (executing on every page load)
   - A background page
+  - A new tab page
   - A popup (IE clickable button)
   - A button
   - A bunch of default icons
