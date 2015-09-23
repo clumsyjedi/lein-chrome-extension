@@ -10,7 +10,7 @@
   :profiles {:dev
              {:plugins [[com.cemerick/austin "0.1.3"]
                         [lein-cljsbuild "1.0.1"]
-                        [lein-chromebuild "0.2.1"]]
+                        [lein-chromebuild "0.3.0"]]
               :cljsbuild
               {:builds
                {:main
