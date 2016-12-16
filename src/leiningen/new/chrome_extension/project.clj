@@ -5,7 +5,7 @@
                  [org.clojure/clojurescript "1.9.89"]
                  [org.clojure/core.async "0.2.385"]
                  [khroma "0.3.0"]
-                 [prismatic/dommy "1.0.0"]]
+                 [prismatic/dommy "1.1.0"]]
   :source-paths ["src"]
   :profiles {:dev
              {:plugins [[com.cemerick/austin "0.1.6"]
