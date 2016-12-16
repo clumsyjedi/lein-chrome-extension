@@ -21,6 +21,7 @@
              [(str "src/" sanitized "/popup.cljs") (render "popup.cljs" data)]
              [(str "src/" sanitized "/new_tab.cljs") (render "new_tab.cljs" data)]
              ["project.clj" (render "project.clj" data)]
+             ["README.md" (render "README.md" data)]
              ["resources/images/icon16.png" (binary "icon16.png")]
              ["resources/images/icon19.png" (binary "icon19.png")]
              ["resources/images/icon38.png" (binary "icon38.png")]
